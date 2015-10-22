@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rbHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="Home"
+            android:checked="true"
+            android:textColor="#f00"
+            android:drawableTop="@drawable/selector_home"/>
+
+        <RadioButton
+            android:id="@+id/rbNews"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:text="News"
+            android:textColor="#fff"
+            android:drawableTop="@drawable/selector_news"/>
+
+        <RadioButton
+            android:id="@+id/rbService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:text="Service"
+            android:textColor="#fff"
+            android:drawableTop="@drawable/selector_service"/>
+
+        <RadioButton
+            android:id="@+id/rbGov"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:text="Gov"
+            android:textColor="#fff"
+            android:drawableTop="@drawable/selector_gov"/>
+
+        <RadioButton
+            android:id="@+id/rbSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:text="Setting"
+            android:textColor="#fff"
+            android:drawableTop="@drawable/selector_setting"/>
+
+    </RadioGroup>
+
+</LinearLayout>

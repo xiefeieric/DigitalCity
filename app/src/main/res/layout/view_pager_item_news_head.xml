@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fei.digitalcity.view.HoriViewPager
+            android:id="@+id/vpNewsTopPics"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </com.fei.digitalcity.view.HoriViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#9888"
+            android:layout_alignBottom="@id/vpNewsTopPics"
+            >
+            <TextView
+                android:id="@+id/tvTopNewsPicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Text"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicatorPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="10dip"
+                app:fillColor="#f00"
+                app:pageColor="@android:color/darker_gray"
+                app:radius="3dp"
+                app:strokeWidth="0dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
